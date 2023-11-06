@@ -1,6 +1,6 @@
 # CS5424 Citus
 
-> This README is only for the Cassandra implementation.
+> This README is only for the Citus implementation.
 
 ## Citus Implementation
 
@@ -19,7 +19,7 @@ We use SQL file to construct the database and initial the data
 
 Before using the provided data to set up the initial database, we need to update and generate several `*csv` files using Python scripts. 
 
-> For your convenience, you can just download preprocessed data set at [here]().
+> For your convenience, you can just download preprocessed data set at [here](https://drive.google.com/drive/folders/1vTZxsb8-AfB_gGoVFfvdjevcSmEUOR7i?usp=drive_link).
 
 #### Notes
 
