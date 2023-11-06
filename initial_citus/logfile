@@ -1,0 +1,2475 @@
+2023-09-18 13:56:14.467 +08 [715094] LOG:  starting PostgreSQL 15.3 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0, 64-bit
+2023-09-18 13:56:14.467 +08 [715094] LOG:  listening on IPv4 address "127.0.0.1", port 5102
+2023-09-18 13:56:14.468 +08 [715094] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5102"
+2023-09-18 13:56:14.469 +08 [715097] LOG:  database system was shut down at 2023-09-18 13:31:11 +08
+2023-09-18 13:56:14.487 +08 [715094] LOG:  database system is ready to accept connections
+2023-09-18 13:56:19.779 +08 [715105] FATAL:  database "project" does not exist
+2023-09-18 13:58:11.966 +08 [715113] ERROR:  Citus can only be loaded via shared_preload_libraries
+2023-09-18 13:58:11.966 +08 [715113] HINT:  Add citus to shared_preload_libraries configuration variable in postgresql.conf in master and workers. Note that citus should be at the beginning of shared_preload_libraries.
+2023-09-18 13:58:11.966 +08 [715113] STATEMENT:  create extension citus;
+2023-09-18 14:13:59.194 +08 [715413] LOG:  starting PostgreSQL 15.3 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0, 64-bit
+2023-09-18 14:13:59.194 +08 [715413] LOG:  listening on IPv4 address "127.0.0.1", port 5102
+2023-09-18 14:13:59.194 +08 [715413] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5102"
+2023-09-18 14:13:59.195 +08 [715416] LOG:  database system was interrupted; last known up at 2023-09-18 14:02:36 +08
+2023-09-18 14:13:59.201 +08 [715416] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-09-18 14:13:59.202 +08 [715416] LOG:  redo starts at 0/18B95D0
+2023-09-18 14:13:59.202 +08 [715416] LOG:  invalid record length at 0/18B9608: wanted 24, got 0
+2023-09-18 14:13:59.202 +08 [715416] LOG:  redo done at 0/18B95D0 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-09-18 14:13:59.202 +08 [715414] LOG:  checkpoint starting: end-of-recovery immediate wait
+2023-09-18 14:13:59.203 +08 [715414] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.001 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB
+2023-09-18 14:13:59.215 +08 [715413] LOG:  database system is ready to accept connections
+2023-09-18 14:14:10.003 +08 [715421] ERROR:  syntax error at or near "/" at character 1
+2023-09-18 14:14:10.003 +08 [715421] STATEMENT:  /df;
+2023-09-18 14:15:19.831 +08 [715421] ERROR:  function citus_set_coordinator_host(unknown, integer) does not exist at character 8
+2023-09-18 14:15:19.831 +08 [715421] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2023-09-18 14:15:19.831 +08 [715421] STATEMENT:  SELECT citus_set_coordinator_host('192.168.48.128',5107);
+2023-09-18 14:15:33.472 +08 [715421] ERROR:  syntax error at or near "citus_set_coordinator_host" at character 10
+2023-09-18 14:15:33.472 +08 [715421] STATEMENT:  SELECT * citus_set_coordinator_host('192.168.48.128',5107);
+2023-09-18 14:15:46.418 +08 [715421] ERROR:  function citus_set_coordinator_host(unknown, integer) does not exist at character 8
+2023-09-18 14:15:46.418 +08 [715421] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2023-09-18 14:15:46.418 +08 [715421] STATEMENT:  SELECT citus_set_coordinator_host('192.168.48.128',5107);
+2023-09-18 14:19:08.666 +08 [715421] ERROR:  function citus_get_active_worker_nodes() does not exist at character 15
+2023-09-18 14:19:08.666 +08 [715421] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2023-09-18 14:19:08.666 +08 [715421] STATEMENT:  SELECT * from citus_get_active_worker_nodes();
+2023-09-18 14:27:37.057 +08 [715771] LOG:  starting PostgreSQL 15.3 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0, 64-bit
+2023-09-18 14:27:37.057 +08 [715771] LOG:  listening on IPv4 address "0.0.0.0", port 5107
+2023-09-18 14:27:37.057 +08 [715771] LOG:  listening on IPv6 address "::", port 5107
+2023-09-18 14:27:37.058 +08 [715771] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5107"
+2023-09-18 14:27:37.059 +08 [715774] LOG:  database system was interrupted; last known up at 2023-09-18 14:13:59 +08
+2023-09-18 14:27:37.065 +08 [715774] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-09-18 14:27:37.066 +08 [715774] LOG:  redo starts at 0/18B9680
+2023-09-18 14:27:37.066 +08 [715774] LOG:  invalid record length at 0/18B96B8: wanted 24, got 0
+2023-09-18 14:27:37.066 +08 [715774] LOG:  redo done at 0/18B9680 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-09-18 14:27:37.066 +08 [715772] LOG:  checkpoint starting: end-of-recovery immediate wait
+2023-09-18 14:27:37.067 +08 [715772] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.001 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB
+2023-09-18 14:27:37.084 +08 [715771] LOG:  database system is ready to accept connections
+2023-09-18 14:30:41.576 +08 [716368] ERROR:  function citus_set_coordinator_host(unknown, integer) does not exist at character 8
+2023-09-18 14:30:41.576 +08 [716368] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2023-09-18 14:30:41.576 +08 [716368] STATEMENT:  SELECT citus_set_coordinator_host('192.168.48.128',5107);
+2023-09-18 14:31:13.593 +08 [716374] ERROR:  function citus_set_coordinator_host(unknown, integer) does not exist at character 8
+2023-09-18 14:31:13.593 +08 [716374] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2023-09-18 14:31:13.593 +08 [716374] STATEMENT:  SELECT citus_set_coordinator_host('192.168.48.128',5107);
+2023-09-18 14:41:38.225 +08 [717647] LOG:  number of prepared transactions has not been configured, overriding
+2023-09-18 14:41:38.225 +08 [717647] DETAIL:  max_prepared_transactions is now set to 200
+2023-09-18 14:41:38.411 +08 [717647] LOG:  starting PostgreSQL 15.3 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0, 64-bit
+2023-09-18 14:41:38.411 +08 [717647] LOG:  listening on IPv4 address "0.0.0.0", port 5107
+2023-09-18 14:41:38.411 +08 [717647] LOG:  listening on IPv6 address "::", port 5107
+2023-09-18 14:41:38.412 +08 [717647] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5107"
+2023-09-18 14:41:38.414 +08 [717650] LOG:  database system was interrupted; last known up at 2023-09-18 14:27:37 +08
+2023-09-18 14:41:38.420 +08 [717650] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-09-18 14:41:38.420 +08 [717650] LOG:  redo starts at 0/18B9730
+2023-09-18 14:41:38.420 +08 [717650] LOG:  invalid record length at 0/18B9768: wanted 24, got 0
+2023-09-18 14:41:38.420 +08 [717650] LOG:  redo done at 0/18B9730 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-09-18 14:41:38.421 +08 [717648] LOG:  checkpoint starting: end-of-recovery immediate wait
+2023-09-18 14:41:38.422 +08 [717648] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.001 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB
+2023-09-18 14:41:38.435 +08 [717647] LOG:  database system is ready to accept connections
+2023-09-18 14:42:12.384 +08 [717655] ERROR:  function citus_set_coordinator_host(unknown, integer) does not exist at character 8
+2023-09-18 14:42:12.384 +08 [717655] HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+2023-09-18 14:42:12.384 +08 [717655] STATEMENT:  SELECT citus_set_coordinator_host('192.168.48.128',5107)
+	;
+2023-09-18 14:43:07.082 +08 [717663] LOG:  starting maintenance daemon on database 16384 user 10
+2023-09-18 14:43:07.082 +08 [717663] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-09-18 14:44:34.862 +08 [717655] ERROR:  connection to the remote node 192.168.48.129:5107 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-09-18 14:44:34.862 +08 [717655] STATEMENT:  SELECT * FROM citus_add_node('192.168.48.129',5107);
+2023-09-18 14:46:38.522 +08 [717648] LOG:  checkpoint starting: time
+2023-09-18 14:47:19.029 +08 [717648] LOG:  checkpoint complete: wrote 405 buffers (2.5%); 0 WAL file(s) added, 0 removed, 0 recycled; write=40.506 s, sync=0.001 s, total=40.508 s; sync files=125, longest=0.001 s, average=0.001 s; distance=2606 kB, estimate=2606 kB
+2023-09-18 14:47:26.953 +08 [717690] ERROR:  connection to the remote node 192.168.48.129:5107 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-09-18 14:47:26.953 +08 [717690] STATEMENT:  SELECT * FROM citus_add_node('192.168.48.129',5107);
+2023-10-09 17:18:06.646 +08 [161444] LOG:  number of prepared transactions has not been configured, overriding
+2023-10-09 17:18:06.646 +08 [161444] DETAIL:  max_prepared_transactions is now set to 200
+2023-10-09 17:18:06.812 +08 [161444] LOG:  starting PostgreSQL 15.3 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0, 64-bit
+2023-10-09 17:18:06.812 +08 [161444] LOG:  listening on IPv4 address "0.0.0.0", port 5102
+2023-10-09 17:18:06.812 +08 [161444] LOG:  listening on IPv6 address "::", port 5102
+2023-10-09 17:18:06.813 +08 [161444] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5102"
+2023-10-09 17:18:06.817 +08 [161447] LOG:  database system was interrupted; last known up at 2023-10-09 17:16:40 +08
+2023-10-09 17:18:06.827 +08 [161447] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-10-09 17:18:06.828 +08 [161447] LOG:  invalid record length at 0/1493798: wanted 24, got 0
+2023-10-09 17:18:06.828 +08 [161447] LOG:  redo is not required
+2023-10-09 17:18:06.829 +08 [161445] LOG:  checkpoint starting: end-of-recovery immediate wait
+2023-10-09 17:18:06.833 +08 [161445] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.001 s, total=0.004 s; sync files=2, longest=0.001 s, average=0.001 s; distance=0 kB, estimate=0 kB
+2023-10-09 17:18:06.841 +08 [188737] LOG:  database system is ready to accept connections
+2023-10-09 17:18:06.917 +08 [188745] FATAL:  database "project" does not exist
+2023-10-14 14:50:47.849 +08 [317527] LOG:  number of prepared transactions has not been configured, overriding
+2023-10-14 14:50:47.849 +08 [317527] DETAIL:  max_prepared_transactions is now set to 200
+2023-10-14 14:50:47.975 +08 [317527] LOG:  starting PostgreSQL 15.3 on x86_64-pc-linux-gnu, compiled by gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0, 64-bit
+2023-10-14 14:50:47.975 +08 [317527] LOG:  listening on IPv4 address "0.0.0.0", port 5102
+2023-10-14 14:50:47.975 +08 [317527] LOG:  listening on IPv6 address "::", port 5102
+2023-10-14 14:50:47.975 +08 [317527] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5102"
+2023-10-14 14:50:47.979 +08 [317530] LOG:  database system was interrupted; last known up at 2023-09-22 20:23:07 +08
+2023-10-14 14:50:47.996 +08 [317530] LOG:  database system was not properly shut down; automatic recovery in progress
+2023-10-14 14:50:47.999 +08 [317530] LOG:  redo starts at 0/1F2F158
+2023-10-14 14:50:48.003 +08 [317530] LOG:  invalid record length at 0/1F31460: wanted 24, got 0
+2023-10-14 14:50:48.003 +08 [317530] LOG:  redo done at 0/1F31428 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2023-10-14 14:50:48.003 +08 [317528] LOG:  checkpoint starting: end-of-recovery immediate wait
+2023-10-14 14:50:48.005 +08 [317528] LOG:  checkpoint complete: wrote 16 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.002 s, sync=0.001 s, total=0.002 s; sync files=12, longest=0.001 s, average=0.001 s; distance=8 kB, estimate=8 kB
+2023-10-14 14:50:48.018 +08 [317527] LOG:  database system is ready to accept connections
+2023-10-14 14:51:49.428 +08 [317541] LOG:  starting maintenance daemon on database 16384 user 10
+2023-10-14 14:51:49.428 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:51:49.546 +08 [317540] ERROR:  loaded Citus library version differs from installed extension version
+2023-10-14 14:51:49.546 +08 [317540] DETAIL:  Loaded library requires 12.2, but the installed extension version is 12.1-1.
+2023-10-14 14:51:49.546 +08 [317540] HINT:  Run ALTER EXTENSION citus UPDATE and try again.
+2023-10-14 14:51:49.546 +08 [317540] STATEMENT:  SELECT * FROM citus_get_active_worker_nodes();
+2023-10-14 14:52:21.647 +08 [317541] WARNING:  transaction recovery cannot connect to 192.168.48.129:5102
+2023-10-14 14:52:21.647 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:21.659 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:21.659 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:21.659 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:21.659 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:23.661 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:23.661 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:23.661 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:23.661 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:25.664 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:25.664 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:25.664 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:25.664 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:27.668 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:27.668 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:27.668 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:27.668 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:29.671 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:29.671 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:29.671 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:29.671 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:31.674 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:31.674 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:31.674 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:31.674 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:33.676 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:33.676 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:33.676 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:33.676 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:35.679 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:35.679 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:35.679 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:35.679 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:37.682 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:37.682 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:37.682 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:37.682 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:39.685 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:39.685 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:39.685 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:39.685 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:41.688 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:41.688 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:41.688 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:41.688 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:43.691 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:43.691 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:43.691 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:43.691 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:45.694 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:45.694 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:45.694 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:45.694 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:47.697 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:47.697 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:47.697 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:47.697 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:49.701 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:49.701 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:49.701 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:49.701 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:51.703 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:51.703 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:51.703 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:51.703 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:53.706 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:53.706 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:53.706 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:53.706 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:55.709 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:55.709 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:55.709 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:55.709 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:57.712 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:57.712 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:57.712 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:57.712 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:59.715 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:59.715 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:52:59.715 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:52:59.715 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:01.718 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:01.718 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:01.718 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:01.718 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:03.721 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:03.721 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:03.721 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:03.721 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:05.724 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:05.724 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:05.724 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:05.724 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:07.727 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:07.727 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:07.727 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:07.727 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:09.730 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:09.730 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:09.730 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:09.730 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:11.733 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:11.733 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:11.733 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:11.733 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:13.735 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:13.735 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:13.735 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:13.735 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:15.738 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:15.738 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:15.738 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:15.738 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:17.741 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:17.741 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:17.741 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:17.741 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:19.744 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:19.744 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:19.744 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:19.744 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:21.747 +08 [317541] WARNING:  transaction recovery cannot connect to 192.168.48.129:5102
+2023-10-14 14:53:21.747 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:21.749 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:21.749 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:21.749 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:21.749 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:23.751 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:23.751 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:23.751 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:23.751 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:25.754 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:25.754 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:25.754 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:25.754 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:27.757 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:27.757 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:27.757 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:27.757 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:29.760 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:29.760 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:29.760 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:29.760 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:31.763 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:31.763 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:31.763 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:31.763 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:33.766 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:33.766 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:33.766 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:33.766 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:35.769 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:35.769 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:35.769 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:35.769 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:37.772 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:37.772 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:37.772 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:37.772 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:39.775 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:39.775 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:39.775 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:39.775 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:41.778 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:41.778 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:41.778 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:41.778 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:43.781 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:43.781 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:43.781 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:43.781 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:45.784 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:45.784 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:45.784 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:45.784 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:47.786 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:47.786 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:47.786 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:47.786 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:49.790 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:49.790 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:49.790 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:49.790 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:51.793 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:51.793 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:51.793 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:51.793 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:53.796 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:53.796 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:53.796 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:53.796 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:55.799 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:55.799 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:55.799 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:55.799 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:57.802 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:57.802 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:57.802 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:57.802 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:59.805 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:59.805 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:53:59.805 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:53:59.805 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:01.807 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:01.807 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:01.807 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:01.807 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:03.810 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:03.810 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:03.810 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:03.810 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:05.813 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:05.813 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:05.813 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:05.813 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:07.816 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:07.816 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:07.816 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:07.816 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:09.819 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:09.819 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:09.819 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:09.819 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:11.822 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:11.822 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:11.822 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:11.822 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:13.825 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:13.825 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:13.825 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:13.825 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:15.828 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:15.828 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:15.828 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:15.828 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:17.831 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:17.831 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:17.831 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:17.831 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:19.833 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:19.833 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:19.833 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:19.833 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:21.836 +08 [317541] WARNING:  transaction recovery cannot connect to 192.168.48.129:5102
+2023-10-14 14:54:21.836 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:21.838 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:21.838 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:21.838 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:21.838 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:23.841 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:23.841 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:23.841 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:23.841 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:25.844 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:25.844 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:25.844 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:25.844 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:27.847 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:27.847 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:27.847 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:27.847 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:29.849 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:29.849 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:29.849 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:29.849 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:31.852 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:31.852 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:31.852 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:31.852 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:33.855 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:33.855 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:33.855 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:33.855 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:35.858 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:35.858 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:35.858 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:35.858 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:37.861 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:37.861 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:37.861 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:37.861 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:39.864 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:39.864 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:39.864 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:39.864 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:41.866 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:41.866 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:41.866 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:41.866 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:43.869 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:43.869 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:43.869 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:43.869 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:45.872 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:45.872 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:45.872 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:45.872 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:47.875 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:47.875 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:47.875 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:47.875 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:49.879 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:49.879 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:49.879 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:49.879 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:51.882 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:51.882 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:51.882 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:51.882 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:53.885 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:53.885 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:53.885 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:53.885 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:55.888 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:55.888 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:55.888 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:55.888 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:57.891 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:57.891 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:57.891 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:57.891 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:59.894 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:59.894 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:54:59.894 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:54:59.894 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:01.897 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:01.897 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:01.897 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:01.897 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:03.899 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:03.899 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:03.899 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:03.899 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:05.902 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:05.902 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:05.902 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:05.902 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:07.905 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:07.905 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:07.905 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:07.905 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:09.908 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:09.908 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:09.908 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:09.908 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:11.911 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:11.911 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:11.911 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:11.911 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:13.914 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:13.914 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:13.914 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:13.914 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:15.917 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:15.917 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:15.917 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:15.917 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:17.920 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:17.920 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:17.920 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:17.920 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:19.920 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:19.920 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:19.920 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:19.920 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:21.923 +08 [317541] WARNING:  transaction recovery cannot connect to 192.168.48.129:5102
+2023-10-14 14:55:21.923 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:21.925 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:21.925 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:21.925 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:21.925 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:23.928 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:23.928 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:23.928 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:23.928 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:25.931 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:25.931 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:25.931 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:25.931 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:27.934 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:27.934 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:27.934 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:27.934 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:29.937 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:29.937 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:29.937 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:29.937 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:31.940 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:31.940 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:31.940 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:31.940 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:33.942 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:33.942 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:33.943 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:33.943 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:35.945 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:35.945 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:35.946 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:35.946 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:37.948 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:37.948 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:37.948 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:37.948 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:39.951 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:39.951 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:39.951 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:39.951 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:41.954 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:41.954 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:41.954 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:41.954 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:43.957 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:43.957 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:43.957 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:43.957 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:45.960 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:45.960 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:45.960 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:45.960 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:47.963 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:47.963 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:47.963 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:47.963 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:48.107 +08 [317528] LOG:  checkpoint starting: time
+2023-10-14 14:55:49.967 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:49.967 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:49.967 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:49.967 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:50.314 +08 [317528] LOG:  checkpoint complete: wrote 23 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.206 s, sync=0.001 s, total=2.208 s; sync files=14, longest=0.001 s, average=0.001 s; distance=33 kB, estimate=33 kB
+2023-10-14 14:55:51.970 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:51.970 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:51.970 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:51.970 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:53.972 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:53.972 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:53.973 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:53.973 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:55.975 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:55.975 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:55.975 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:55.975 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:57.978 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:57.978 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:57.978 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:57.978 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:59.981 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:59.981 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:55:59.981 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:55:59.981 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:01.984 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:01.984 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:01.984 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:01.984 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:03.987 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:03.987 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:03.987 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:03.987 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:05.990 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:05.990 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:05.990 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:05.990 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:07.993 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:07.993 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:07.993 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:07.993 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:09.996 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:09.996 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:09.996 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:09.996 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:11.998 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:11.998 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:11.999 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:11.999 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:14.002 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:14.002 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:14.002 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:14.002 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:16.005 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:16.005 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:16.005 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:16.005 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:18.008 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:18.008 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:18.008 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:18.008 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:20.011 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:20.011 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:20.011 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:20.011 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:22.014 +08 [317541] WARNING:  transaction recovery cannot connect to 192.168.48.129:5102
+2023-10-14 14:56:22.014 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:22.015 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:22.015 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:22.015 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:22.015 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:24.018 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:24.018 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:24.018 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:24.018 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:26.021 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:26.021 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:26.021 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:26.021 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:28.024 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:28.024 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:28.024 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:28.024 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:30.026 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:30.026 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:30.026 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:30.026 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:32.029 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:32.029 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:32.029 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:32.029 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:34.032 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:34.032 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:34.032 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:34.032 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:36.035 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:36.035 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:36.035 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:36.035 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:38.038 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:38.038 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:38.038 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:38.038 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:40.041 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:40.041 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:40.041 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:40.041 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:42.044 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:42.044 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:42.044 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:42.044 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:44.047 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:44.047 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:44.047 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:44.047 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:46.050 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:46.050 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:46.050 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:46.050 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:48.052 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:48.052 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:48.052 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:48.052 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:50.056 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:50.056 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:50.056 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:50.056 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:52.059 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:52.059 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:52.059 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:52.059 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:54.062 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:54.062 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:54.062 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:54.062 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:56.065 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:56.065 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:56.065 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:56.065 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:58.068 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:58.068 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:56:58.070 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:56:58.070 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:00.073 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:00.073 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:00.073 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:00.073 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:02.076 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:02.076 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:02.076 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:02.076 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:04.079 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:04.079 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:04.079 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:04.079 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:06.082 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:06.082 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:06.082 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:06.082 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:08.084 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:08.084 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:08.084 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:08.084 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:10.087 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:10.087 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:10.087 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:10.087 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:12.090 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:12.090 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:12.090 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:12.090 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:14.093 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:14.093 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:14.093 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:14.093 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:16.096 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:16.096 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:16.096 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:16.096 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:18.099 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:18.099 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:18.099 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:18.099 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:20.102 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:20.102 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:20.102 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:20.102 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:22.104 +08 [317541] WARNING:  transaction recovery cannot connect to 192.168.48.129:5102
+2023-10-14 14:57:22.104 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:22.106 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:22.106 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:22.106 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:22.106 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:24.109 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:24.109 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:24.109 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:24.109 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:26.112 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:26.112 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:26.112 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:26.112 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:28.115 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:28.115 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:28.115 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:28.115 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:30.118 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:30.118 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:30.118 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:30.118 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:32.121 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:32.121 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:32.121 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:32.121 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:34.124 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:34.124 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:34.124 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:34.124 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:36.126 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:36.126 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:36.126 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:36.126 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:38.129 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:38.129 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:38.129 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:38.129 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:40.132 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:40.132 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:40.132 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:40.132 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:42.135 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:42.135 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:42.135 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:42.135 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:44.138 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:44.138 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:44.138 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:44.138 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:46.141 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:46.141 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:46.141 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:46.141 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:48.144 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:48.144 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:48.144 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:48.144 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:50.148 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:50.148 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:50.148 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:50.148 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:52.150 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:52.150 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:52.151 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:52.151 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:54.153 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:54.153 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:54.153 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:54.153 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:56.156 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:56.156 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:56.156 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:56.156 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:58.159 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:58.159 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:57:58.159 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:57:58.159 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:00.162 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:00.162 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:00.162 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:00.162 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:02.165 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:02.165 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:02.165 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:02.165 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:04.168 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:04.168 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:04.168 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:04.168 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:06.171 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:06.171 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:06.171 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:06.171 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:08.174 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:08.174 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:08.174 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:08.174 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:10.177 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:10.177 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:10.177 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:10.177 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:12.180 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:12.180 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:12.180 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:12.180 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:14.182 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:14.182 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:14.182 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:14.182 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:16.185 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:16.185 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:16.185 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:16.185 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:18.188 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:18.188 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:18.188 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:18.188 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:20.191 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:20.191 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:20.191 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:20.191 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:22.194 +08 [317541] WARNING:  transaction recovery cannot connect to 192.168.48.129:5102
+2023-10-14 14:58:22.194 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:22.196 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:22.196 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:22.196 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:22.196 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:24.199 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:24.199 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:24.199 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:24.199 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:26.202 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:26.202 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:26.202 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:26.202 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:28.205 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:28.205 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:28.205 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:28.205 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:30.207 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:30.207 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:30.207 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:30.207 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:32.210 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:32.210 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:32.210 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:32.210 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:34.213 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:34.213 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:34.213 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:34.213 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:36.216 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:36.216 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:36.216 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:36.216 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:38.219 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:38.219 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:38.219 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:38.219 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:40.222 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:40.222 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:40.222 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:40.222 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:42.225 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:42.225 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:42.225 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:42.225 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:44.228 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:44.228 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:44.228 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:44.228 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:46.231 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:46.231 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:46.231 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:46.231 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:48.233 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:48.233 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:48.233 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:48.233 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:50.237 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:50.237 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:50.237 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:50.237 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:52.240 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:52.240 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:52.240 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:52.240 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:54.243 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:54.243 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:54.243 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:54.243 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:56.246 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:56.246 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:56.246 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:56.246 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:58.248 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:58.248 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:58:58.248 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:58:58.248 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:00.251 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:00.251 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:00.251 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:00.251 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:02.254 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:02.254 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:02.254 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:02.254 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:04.257 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:04.257 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:04.257 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:04.257 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:06.260 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:06.260 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:06.260 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:06.260 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:08.263 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:08.263 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:08.263 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:08.263 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:10.266 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:10.266 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:10.266 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:10.266 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:12.269 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:12.269 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:12.269 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:12.269 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:14.272 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:14.272 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:14.272 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:14.272 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:16.275 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:16.275 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:16.275 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:16.275 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:18.277 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:18.277 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:18.277 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:18.277 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:20.280 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:20.280 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:20.280 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:20.280 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:22.283 +08 [317541] WARNING:  transaction recovery cannot connect to 192.168.48.129:5102
+2023-10-14 14:59:22.283 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:22.285 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:22.285 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:22.285 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:22.285 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:24.288 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:24.288 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:24.288 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:24.288 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:26.291 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:26.291 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:26.291 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:26.291 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:28.294 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:28.294 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:28.294 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:28.294 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:30.296 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:30.296 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:30.296 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:30.296 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:32.299 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:32.299 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:32.299 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:32.299 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:34.302 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:34.302 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:34.302 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:34.302 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:36.305 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:36.305 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:36.305 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:36.305 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:38.308 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:38.308 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:38.308 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:38.308 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:40.310 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:40.310 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:40.311 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:40.311 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:42.313 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:42.313 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:42.313 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:42.313 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:44.316 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:44.316 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:44.316 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:44.316 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:46.319 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:46.319 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:46.319 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:46.319 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:48.322 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:48.322 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:48.322 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:48.322 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:50.325 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:50.325 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:50.325 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:50.325 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:52.328 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:52.328 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:52.328 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:52.328 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:54.331 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:54.331 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:54.331 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:54.331 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:56.334 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:56.334 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:56.334 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:56.334 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:58.337 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:58.337 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 14:59:58.337 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 14:59:58.337 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:00.340 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:00.340 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:00.340 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:00.340 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:02.343 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:02.343 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:02.343 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:02.343 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:04.346 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:04.346 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:04.346 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:04.346 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:06.348 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:06.348 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:06.348 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:06.348 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:08.351 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:08.351 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:08.351 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:08.351 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:10.354 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:10.354 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:10.354 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:10.354 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:12.357 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:12.357 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:12.357 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:12.357 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:14.360 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:14.360 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:14.360 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:14.360 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:16.363 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:16.363 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:16.363 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:16.363 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:18.366 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:18.366 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:18.366 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:18.366 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:20.369 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:20.369 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:20.369 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:20.369 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:22.371 +08 [317541] WARNING:  transaction recovery cannot connect to 192.168.48.129:5102
+2023-10-14 15:00:22.371 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:22.373 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:22.373 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:22.373 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:22.373 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:24.376 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:24.376 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:24.376 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:24.376 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:26.379 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:26.379 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:26.379 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:26.379 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:28.382 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:28.382 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:28.382 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:28.382 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:30.384 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:30.384 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:30.385 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:30.385 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:32.387 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:32.387 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:32.387 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:32.387 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:34.390 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:34.390 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:34.390 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:34.390 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:36.393 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:36.393 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:36.393 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:36.393 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:38.396 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:38.396 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:38.396 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:38.396 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:40.399 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:40.399 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:40.399 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:40.399 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:42.402 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:42.402 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:42.402 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:42.402 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:44.405 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:44.405 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:44.405 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:44.405 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:46.408 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:46.408 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:46.408 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:46.408 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:48.411 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:48.411 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:48.411 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:48.411 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:50.415 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:50.415 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:50.415 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:50.415 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:52.418 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:52.418 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:52.418 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:52.418 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:54.421 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:54.421 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:54.421 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:54.421 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:56.423 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:56.423 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:56.424 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:56.424 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:58.427 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:58.427 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:00:58.427 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:00:58.427 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:01:00.429 +08 [317541] WARNING:  connection to the remote node 192.168.48.129:5102 failed with the following error: server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:01:00.429 +08 [317541] CONTEXT:  Citus maintenance daemon for database 16384 user 10
+2023-10-14 15:01:00.429 +08 [317541] WARNING:  server closed the connection unexpectedly
+		This probably means the server terminated abnormally
+		before or while processing the request.
+2023-10-14 15:01:00.429 +08 [317541] CONTEXT:  while executing command on 192.168.48.129:5102
+	Citus maintenance daemon for database 16384 user 10
