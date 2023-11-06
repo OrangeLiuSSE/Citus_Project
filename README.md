@@ -29,7 +29,7 @@ There are some slight modifications made to some of the original preload `*.csv`
 - `order-line.csv`: some values in column `OL_DELIVERY_D` are `null` in the original file, which are not of valid `timestamp` type in Citus, so these values are replaced by ``(empty value) instead.
 
 
-### CLuster Setup
+### Cluster Setup
 
 We manualy select 5 separate servers in the long partition of the Slurm with consecutive IPs (e.g., xgph[10-14]). 
 The smallest IP among them will be selected as the Coordinator node. 
